@@ -275,11 +275,12 @@ function 第一段 () {
 }
 let light2 = 0
 music.setTempo(199)
+basic.pause(1000)
 basic.forever(function () {
     light2 = input.lightLevel()
-    if (light2 > 130) {
-        basic.showString("2020")
-        basic.showIcon(IconNames.Heart)
-        basic.showString("Merry Christmas")
+    if (light2 > 100) {
+        basic.showString("109?!Hi")
+        basic.showIcon(IconNames.Skull)
+        basic.showString("110.2021.1001013")
     }
 })
