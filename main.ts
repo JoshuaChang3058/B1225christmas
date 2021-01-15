@@ -51,18 +51,18 @@ input.onSound(DetectedSound.Loud, function () {
         第七段()
         第八段()
         第四段()
+        rvm1218_1()
+        rvm1218_2()
+        rvm1218_3()
+        rvm1218_4()
+        rvm1218_5()
+        rvm1218_6()
+        rvm1217_1()
+        rvm1217_2()
+        rvm1217_3()
+        rvm1217_4()
+        rvm1217_5()
     }
-    rvm1218_1()
-    rvm1218_2()
-    rvm1218_3()
-    rvm1218_4()
-    rvm1218_5()
-    rvm1218_6()
-    rvm1217_1()
-    rvm1217_2()
-    rvm1217_3()
-    rvm1217_4()
-    rvm1217_5()
 })
 function rvm1217_4 () {
     music.playTone(392, music.beat(BeatFraction.Whole))
@@ -275,12 +275,15 @@ function 第一段 () {
 }
 let light2 = 0
 music.setTempo(199)
-basic.pause(1000)
+basic.pause(2000)
+basic.showNumber(input.lightLevel())
 basic.forever(function () {
     light2 = input.lightLevel()
     if (light2 > 100) {
         basic.showString("109?!Hi")
         basic.showIcon(IconNames.Skull)
         basic.showString("110.2021.1001013")
+        basic.showIcon(IconNames.Heart)
+        basic.showIcon(IconNames.House)
     }
 })
